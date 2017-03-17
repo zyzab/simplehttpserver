@@ -36,7 +36,7 @@ public class Request {
             i = -1;
         }
         for(int j=0;j<i;j++){
-            requestStr.append((char)bytes[i]);
+            requestStr.append((char)bytes[j]);
         }
         logger.info("request {}",requestStr);
         url = parseUrl(requestStr.toString());
