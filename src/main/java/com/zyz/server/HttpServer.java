@@ -1,5 +1,7 @@
 package com.zyz.server;
 
+import com.zyz.server.http.Request;
+import com.zyz.server.http.Response;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
