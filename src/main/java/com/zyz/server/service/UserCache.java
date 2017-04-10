@@ -138,7 +138,7 @@ public class UserCache {
      * 程序关闭时,调用保存缓存中用户的信息
      */
     public void reWrite(){
-        File userFile = new File("../user.txt");
+        File userFile = new File(this.getUserFilePath());
         if(USERCACHEMAP.isEmpty()){
             userFile.deleteOnExit();
             LOGGER.info("缓存中不存在数据,清空文件");
